@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foo Fighters</title>
+</head>
+<style>
+    
+    body{
+        background-image: url(images/background.jpg);
+        background-size: cover;
+        background-color: rgb(61, 61, 61);
+    }
+    header{
+        color: azure;
+        text-align: center;
+    }
+    nav{
+        float: inline-start;
+        background-color: rgb(180, 179, 179, 0.5);
+        width: 100%;
+        /*background: #ccc;*/
+        }
+    nav ul li{
+        display: inline;     
+    }
+    section article{
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 60%;
+        background-color: rgba(212, 212, 212, 0.5);
+    }
+    section aside {
+        float: right;
+        margin: 10px;
+        width: 250px;
+        border-radius: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        color: aliceblue;
+        background-color: rgb(100, 4, 4, 0.5);
+    }
+    footer{
+        clear: both;
+        background-color: rgb(180, 179, 179, 0.5);
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <h1 style="text-align: center;"><i>Foo Fighters</i></h1>
+        <nav>
+            <ul>
+                    <li>
+                        <a href="#">Novedades</a>
+                    </li>     
+                    <li>
+                        <a href="#">Historia</a>
+                    </li>                                
+                    <li>
+                        <a href="#">Discografia</a>
+                    </li>                                
+                    <li>
+                        <a href="#">Galeria</a>
+                    </li>                              
+                    <li>
+                        <a href="#">Proximos Conciertos</a>
+                    </li>               
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+        <article>
+            <h2><i>Inicios</i></h2>
+            <img src="images/foo1.jpg" alt="band" style="width:fit-content">
+            <p>Foo Fighters es una banda estadounidense de grunge formada en la ciudad de Seattle en 1994 por Dave Grohl, exbaterista de Nirvana y Scream.
+
+                El grupo debe su nombre a los ovnis y los diversos fenómenos aéreos que fueron reportados por los pilotos de los aviones aliados en la Segunda Guerra Mundial, que se conocen colectivamente como Foo Fighters. Antes del lanzamiento de su álbum debut en 1995, Grohl, como único miembro oficial, reclutó al bajista Nate Mendel y el baterista William Goldsmith, ambos anteriormente miembros de Sunny Day Real Estate, así como su compañero en las giras de Nirvana, Pat Smear como guitarrista para completar la alineación.
+            </p>
+        </article>
+        <aside>
+            <h2>Escribinos!</h2>
+            <form action="">
+                <p><i>Nombre:</i></p>
+                <input type="text"> <br>
+                <p><i>e-mail:</i></p>
+                <input type="email"> <br>
+                <p><i>Mensaje:</i></p>
+                <textarea></textarea> <br>
+                <p>
+                    <input type="submit" class="boton" value="Enviar">
+                </p>
+            </form>
+        </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Copyright - Todos Los Derechos Reservados</p>
+    </footer>
+</body>
+</html>
