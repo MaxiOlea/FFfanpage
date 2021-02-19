@@ -1,0 +1,582 @@
+*{
+    margin: auto 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.body-index{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+/*------------------Estilos del <header>-----------------*/
+#header-index{
+    top: 0;
+    width: 100%;
+    height:fit-content;
+    background-color: #2d2d2d;
+    color: azure;
+    text-align: center;
+    display: flexbox;
+    position: fixed;
+    padding: 0;
+    
+}
+
+#logo{
+    max-width: 250px;
+}
+/*--------------------------------------------------------*/
+
+/*-------------------Estilos del Nav----------------------*/
+.jc-center{
+    justify-content: center;
+}
+
+.jc {
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box{
+    width: auto;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    background: rgba(196, 9, 9, 0.5);
+    font-size: 1em;
+    text-align: center;
+    line-height: 40px;
+    color: aliceblue;
+    margin: 5px;
+    margin-left: 1%;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+/*--------------------------------------------------------*/
+
+
+
+/*---------------------Seccion <main> del Index---------------------*/
+#main-index{
+    display: flex;
+    margin-top: 135px;
+}
+
+#section-index{
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 10px;
+    width: 79%;
+    height: 620px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Propiedades del <iframe> dentro de Index donde se visualizan las paginas*/
+#content{    
+    /*overflow: hidden;*/
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------<aside> del Index---------------------------------*/
+
+#aside-index {
+    justify-content: flex-end;
+    margin: auto;
+    width: 20%;
+    height: 620px;
+    padding: 1%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75em;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#aside-index h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#spotify{
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+
+.nota{
+    text-align: end;
+}
+
+
+#text{
+    width: 100%;
+    height: 50px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton {
+    font-size: 0.75rem;
+    padding: 5px;
+    width: fit-content;
+    background: rgba(196, 9, 9);
+    border: none;
+    color: white;
+    margin:  0;
+  
+}
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+footer{
+    clear: both;
+    background-color: rgba(24, 13, 13, 0.5);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------ESTILOS DE HISTORIA.HTML---------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+#main-historia{
+    display: flex;
+    margin: 0 auto;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#aside-historia{
+    justify-content: flex-start;
+    width: 20%;
+    height: fit-content;
+    padding: 0.8%;
+    border-radius: 15px;
+    background-color: rgb(41, 41, 41);
+    
+}
+
+#aside-historia li a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem; 
+      
+}
+
+#aside-historia li a:hover{
+    color: red;
+}
+#section-historia{
+    justify-content: flex-end;
+    width: 75%;
+}
+
+#section-historia a:hover{
+    color: red;
+}
+
+.titulo{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.link{
+    text-align: right;
+}
+.parrafo{
+    text-align: justify;
+    text-indent: 5%;
+}
+
+#img-historia {
+    border: 1px solid aliceblue;
+    padding: 1%;
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*---------------------ESTILOS DE DISCOGRAFIA.HTML-------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+#main-disc{
+    width: 75%;
+}
+
+.img-disc {
+    border: 1px solid aliceblue;
+    padding: 1%;
+    /*padding-bottom: 1;*/
+    display: block;
+    position: auto;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    max-width: 350px;
+    
+}
+
+.flex-disc {
+    display: flex;
+}
+
+.box-img-disc{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background:rgb(41, 41, 41);
+    padding: 1%;
+    color: #fff;
+    margin: 5px;
+}
+
+.box-disc{
+    width: fit-content;
+    height: fit-content;
+    background:rgb(41, 41, 41);
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 0.75rem;
+    text-align: justify;
+    line-height: 20px;
+    color: #fff;
+    margin: 5px;
+    /*box-shadow: 7px 13px 37px  rgba(197, 28, 28, 0.5);;*/
+}
+
+.a-disc{
+    text-decoration: none;
+}
+
+.a-disc:hover{
+    color: red;
+}
+
+/*--------------------Estilo de la tabla en DISCOGRAFIA.HTML--------------------*/
+table{
+    background-color: rgb(41, 41, 41,0.8);
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 5px 10px 15px #000;
+}
+
+th{
+    padding: 20px;
+}
+
+td{
+    padding: 12px;
+}
+
+thead{
+    background-color: rgb(41, 41, 41);
+    border-bottom: 5px solid rgba(196, 9, 9, 0.5);
+}
+
+tr:hover td{
+    background-color: rgba(197, 28, 28, 0.5);
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-----------------------ESTILOS DE VIDEOS.HTML----------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+#section-video{
+    justify-content: center;
+    width: 75%;
+}
+
+
+/*------------PARA HACER EL VIDEO RESPONSIVE------------*/
+.video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------ESTILOS DE CONTACTO.HTML---------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+#main-contacto{
+    display: flex;
+}
+.form{
+    justify-content: center;
+    padding: 2%;
+    width: 350px;
+    margin-top: 50px;
+    height: auto;
+    background-color:  rgb(41, 41, 41);
+    border-radius: 5px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+#form-contacto{
+    margin: 0 auto;
+}
+
+input{
+    /*border: 0;*/
+    color: black;
+    outline:none;
+    
+    
+}
+
+#consulta{
+    width: 100%;
+    height: 100px;
+    background: rgba(88, 88, 88, 0.5);
+    color: aliceblue;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.campo{
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #cccccc;
+    background: rgba(88, 88, 88, 0.5);
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.campo:focus{
+    border-color: red;
+}
+
+.ejemplo{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.boton-contacto {
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+    background: rgba(196, 9, 9);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 10px 0;
+  
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+/*----Media queries----*/
+
+@media all and (max-width:1200px) and (min-width: 640px) {
+    
+    .body-index{
+        background-image: none;
+        background-color:rgb(94, 93, 93);
+    }
+    #aside-index{
+        display: none;
+    }
+
+    #section-index{
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        background-color: none;
+    }
+
+    .box{
+        width: auto;
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 0;
+        background: rgba(196, 9, 9, 0.5);
+        font-size: 1em;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        margin: 2px;
+        margin-left: 0;
+    }
+
+    a{
+        font-size: 0.7rem;
+    }
+
+    #main-historia{
+        display: block;
+    }
+    #aside-historia{
+        /*justify-content: flex-start;*/
+        width: 80%;
+        height: fit-content;
+        padding: 5px;
+        border-radius: 0;
+        background-color: rgb(41, 41, 41);
+    }
+
+    /*#aside-historia li{
+        display: inline;
+        
+    }*/
+
+}
+
+@media all and (max-width:640px){
+    .body-index{
+        background-image: none;
+        background-color: 	#2d2d2d;
+    }
+
+    #main-index{
+        margin-top: 125px;
+    }
+    #aside-index{
+        display: none;
+    }
+
+    #section-index{
+        justify-content: center;
+        
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        background-color: none;
+    }
+
+    .box{
+        width: auto;
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 0;
+        background: rgba(196, 9, 9, 0.5);
+        font-size: 1em;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        margin: 2px;
+        margin-left: 0;
+    }
+
+    a{
+        font-size: 0.7rem;
+    }
+
+    #main-historia{
+        display: block;
+    }
+    #aside-historia{
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+        border-radius: 0;
+        background-color: rgb(41, 41, 41);
+    }
+
+    #aside-historia li{
+        display: inline;
+    }
+
+    #section-historia{
+        justify-content: center;
+        width: 90%;
+    }
+
+    table{
+        font-size: 0.8rem;
+    }
+
+    th{
+        padding: 10px;
+    }
+    
+    td{
+        padding: 10px;
+    }
+
+    tr:hover td{
+        font-weight: normal;
+    }
+
+    .flex-disc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-disc{
+        width: 80%;
+    }
+
+    #section-video{
+        width: 90%;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+   
+
+}

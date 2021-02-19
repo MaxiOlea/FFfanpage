@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="Stylec.css">
+</head>
+<body>
+    <form id= "forminfo" action="okrecibido.html" target="_self">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <p><label>
+                Nombre:
+                <input
+                text="text" 
+                name="nombrecompleto" 
+                placeholder="Nombre Completo"
+                size="12"
+                maxlength="12"
+                required>
+                 *
+            </label></p>
+        
+            <p><label>
+                Genero:</label>
+                <select name=genero>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Masculino Trans</option>
+                    <option>Femenino Trans</option>
+                    <option>No binario</option>
+                    <option selected> - </option>  
+                </select>
+            </label></p>
+
+            <p><label>
+                Seleciona tu país:
+                <select name="pais">
+                    <option>Argentina</option>
+                    <option>Australia</option>
+                    <option>Bolivia</option>
+                    <option>Brasil</option>
+                    <option>Canada</option>
+                    <option>Chile</option>
+                    <option>Colombia</option>
+                    <option>España</option>
+                    <option>Mexico</option>
+                    <option>Paraguay</option>
+                    <option>Uruguay</option>
+                    <option>Venezuela</option>
+                    <option selected> - </option>                         
+                </select>   
+            </label></p>
+            <p><label>e-mail:
+                <input type="email" required>
+                 *
+            </label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos</legend>
+            <p><label>
+                Disco Favorito de los Foo
+                <select name="disco">
+                    <option>Foo Fighters</option>
+                    <option>The Colour and the Shape</option>
+                    <option>There Is Nothing Left to Lose</option>
+                    <option selected>One by One</option>
+                    <option>In Your Honor</option>
+                    <option>Echoes, Silence, Patience & Grace</option>
+                    <option>Wasting Light</option>
+                    <option>Sonic Highways</option>
+                    <option>Concrete and Gold</option>
+                </select>
+            </label></p>
+
+            <p><label>
+                ¿Qué otra banda o artista es tu favorito?
+                <input
+                text="text" 
+                name="artistafav" 
+                placeholder="Banda o Artista"
+                size="20"
+                maxlength="20">
+            </label></p>
+
+            <p><label>
+                Generos Favoritos<br>
+                <input type="checkbox" name="rock">Rock<br>
+                <input type="checkbox" name="pop">Pop<br>
+                <input type="checkbox" name="reggae">Reggae<br>
+                <input type="checkbox" name="blues">Blues<br>
+                <input type="checkbox" name="jazz">Jazz<br>
+                <input type="checkbox" name="clasico">Clasico<br>
+                <input type="checkbox" name="otros">Otros<br>
+            </label></p>
+        </fieldset>
+        <p><i>Mensaje:</i></p>
+        <textarea></textarea> <br>
+        <p>
+            <input type="reset" value="Reiniciar el formulario">
+            <input type="submit" class="boton" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

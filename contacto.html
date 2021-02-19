@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<style>
+    *{
+        margin: 0 auto;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+    }    
+</style>
+
+<body>
+    <header>
+        <h2><i>Contacto</i></h2>
+    </header>
+    <main id="main-contacto"> 
+        <section class="form">
+            <form id="form-contacto" action="okrecibido.html" target="_self">
+                <p><label>
+                    <input class="campo"
+                    type="text" 
+                    name="nombre" 
+                    placeholder="Ingrese su Nombre Completo:"
+                    size="30"
+                    maxlength="30"
+                    required>
+                </label></p>
+                
+                <p><label>
+                    <input class="campo"
+                    type="email" 
+                    placeholder="Ingrese su E-mail:" required>
+
+                </label></p>
+                <p class="ejemplo">ej: correo123@ejemplo.com</p>
+                
+                <p><label>
+                    <input class="campo"
+                    type="tel" name="telefono" 
+                    placeholder="Ingrese su numero de telefono:">
+                </label></p>
+                <p class="ejemplo">ej: +54 9351 5123 456</p>
+                <textarea id="consulta" placeholder="Escribe tu consulta y te contactaremos a la brevedad..."></textarea>
+                <br>
+                <div class="botones">
+                    <input type="submit" class="boton-contacto" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -4,70 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foo Fighters</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
-<style>
-    
-    body{
-        background-image: url(images/background.jpg);
-        background-size: cover;
-        background-color: rgb(61, 61, 61);
-    }
-    header{
-        color: azure;
-        text-align: center;
-    }
-    nav{
-        float: inline-start;
-        background-color: rgba(24, 13, 13, 0.5);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 25px;
-        width: 100%;
-        /*background: #ccc;*/
-        }
-    nav ul li{
-        display: inline;     
-    }
-    section article{
-        float: left;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        width: 70%;
-        background-color: rgba(24, 13, 13, 0.75);
-        color: aliceblue;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    section aside {
-        float: right;
-        margin: auto;
-        width: 20%;
-        padding: 15px;
-        border-radius: 20px;
-        margin: 0 auto;
-        text-align: left;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 12px;
-        color: aliceblue;
-        background-color: rgba(0, 0, 0, 0.25);
-    }
-    section aside h2{
-        text-align: center;
-    }
-    footer{
-        clear: both;
-        background-color: rgba(24, 13, 13, 0.5);
-        padding: 5px;
-        margin: 10px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: aliceblue;
-    }
-</style>
-<body>
-    <header>
-        <h1 style="text-align: center;"><i>Foo Fighters</i></h1>
+
+<body class="body-index">
+    <header id="header-index">
+        <img id="logo" src="images/logo.png" alt="logo">
         <nav>
-            <ul>
+            <div class="jc jc-center">
+                <div class="box"><a href="historia.html" target="iframecontenedor">HISTORIA</a></div>
+                <div class="box"><a class="lista" href="discografia.html" target="iframecontenedor">DISCOGRAFIA</a></div>
+                <div class="box"><a class="lista" href="videos.html" target="iframecontenedor">VIDEOS</a></div>
+                <div class="box"><a class="lista" href="contacto.html" target="iframecontenedor">CONTACTO</a></div>
+            </div>
+ <!--           <ul>
                     <li>
                         <a href="#">Novedades</a>
                     </li>     
@@ -84,77 +34,24 @@
                         <a href="#">Proximos Conciertos</a>
                     </li>               
             </ul>
+            -->
         </nav>
     </header>
-    <section>
-        <div>
-        <article>
-            <h2><i>Inicios</i></h2>
-            <img src="images/foo1.jpg" alt="band" style="width:fit-content">
-            <p>Foo Fighters es una banda estadounidense de grunge formada en la ciudad de Seattle en 1994 por Dave Grohl, exbaterista de Nirvana y Scream.
 
-                El grupo debe su nombre a los ovnis y los diversos fenómenos aéreos que fueron reportados por los pilotos de los aviones aliados en la Segunda Guerra Mundial, que se conocen colectivamente como Foo Fighters. Antes del lanzamiento de su álbum debut en 1995, Grohl, como único miembro oficial, reclutó al bajista Nate Mendel y el baterista William Goldsmith, ambos anteriormente miembros de Sunny Day Real Estate, así como su compañero en las giras de Nirvana, Pat Smear como guitarrista para completar la alineación.
-            </p>
-
-            <table border="1">
-                <caption>Discografía</caption>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Año Lanzamiento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Foo Fighters</td>
-                        <td>1995</td>
-                    </tr>
-                    <tr>
-                        <td>The Colour and the Shape</td>
-                        <td>1997</td>
-                    </tr>
-                    <tr>
-                        <td>There Is Nothing Left to Lose </td>
-                        <td>1999</td>
-                    </tr>
-                    <tr>
-                        <td>One by One </td>
-                        <td>2002</td>
-                    </tr>
-                    <tr>
-                        <td>In Your Honor</td>
-                        <td>2005</td>
-                    </tr>
-                    <tr>
-                        <td>Echoes, Silence, Patience & Grace</td>
-                        <td>2007</td>
-                    </tr>
-                    <tr>
-                        <td>Wasting Light </td>
-                        <td>2011</td>
-                    </tr>
-                    <tr>
-                        <td>Sonic Highways</td>
-                        <td>2014</td>
-                    </tr>
-                    <tr>
-                        <td>Concrete and Gold </td>
-                        <td>2017</td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </article>
-        <aside>
-            <iframe 
-            src="https://open.spotify.com/embed/track/5OQsiBsky2k2kDKy2bX2eT" 
-            width="300" 
-            height="380" 
+    <main id="main-index">
+    <section id="section-index">
+        <iframe id="content" src="historia.html" name="iframecontenedor" title="Iframe contenedor"></iframe>    
+    </section>
+    <aside id="aside-index">
+        <iframe id="spotify" 
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9Ozxs05KifN" 
+             
             frameborder="0" 
             allowtransparency="true" 
             allow="encrypted-media">
-            </iframe>
+        </iframe>
             <h2>Contanos de vos!</h2>
+            <p class="nota">(*) Campos obligatorios</p>
             <form action="okrecibido.html" target="_self">
                 <fieldset>
                     <legend>Información Personal</legend>
@@ -169,7 +66,7 @@
                         required>
                          *
                     </label></p>
-                    
+                
                     <p><label>
                         Genero:</label>
                         <select name=genero>
@@ -181,7 +78,7 @@
                             <option selected> - </option>  
                         </select>
                     </label></p>
-
+        
                     <p><label>
                         Seleciona tu país:
                         <select name="pais">
@@ -205,7 +102,7 @@
                          *
                     </label></p>
                 </fieldset>
-
+        
                 <fieldset>
                     <legend>Gustos</legend>
                     <p><label>
@@ -222,7 +119,7 @@
                             <option>Concrete and Gold</option>
                         </select>
                     </label></p>
-
+        
                     <p><label>
                         ¿Qué otra banda o artista es tu favorito?
                         <input
@@ -232,32 +129,28 @@
                         size="20"
                         maxlength="20">
                     </label></p>
-
+        
                     <p><label>
                         Generos Favoritos<br>
-                        <input type="checkbox" name="rock">Rock<br>
-                        <input type="checkbox" name="pop">Pop<br>
+                        <input type="checkbox" name="rock">Rock
+                        <input type="checkbox" name="pop">Pop
                         <input type="checkbox" name="reggae">Reggae<br>
-                        <input type="checkbox" name="blues">Blues<br>
-                        <input type="checkbox" name="jazz">Jazz<br>
-                        <input type="checkbox" name="clasico">Clasico<br>
+                        <input type="checkbox" name="blues">Blues
+                        <input type="checkbox" name="jazz">Jazz
                         <input type="checkbox" name="otros">Otros<br>
                     </label></p>
                 </fieldset>
-                <p><i>Mensaje:</i></p>
-                <textarea></textarea> <br>
-                <p>
-                    <input type="reset" value="Reiniciar el formulario">
+                <fieldset>
+                    <legend><i>Mensaje</i></legend>
+                <textarea id="text" placeholder="Escribe tu mensaje..."></textarea>
+                </fieldset>
+                <div class="botones">
+                    <input type="reset" class="boton" value="Reiniciar el formulario">
                     <input type="submit" class="boton" value="Enviar">
-                
-                    <br><br>
-                    (*) Campos obligatorios
-                </p>
+                </div>
             </form>
-        </aside>
-        </div>
-    </section>
-
+    </aside>
+    </main>
     <footer>
         <p>© Copyright - Todos Los Derechos Reservados</p>
     </footer>
